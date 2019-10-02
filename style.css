@@ -36,6 +36,7 @@ h1{
     color: #445c3c;
 	border-radius: 16px;
     margin-left: 6%;
+    margin-bottom: 2%;
 	padding: 8px 18px 8px 18px;
 	font-size: 0.8em;
 }
@@ -45,7 +46,8 @@ h1{
     background-color: #EEE;
     color: #445c3c;
 	border-radius: 16px;
-	margin-left: 6%;
+    margin-left: 6%;
+    margin-bottom: 3%;
 	padding: 8px 18px 8px 18px;
 	font-size: 0.8em;
 }
@@ -62,4 +64,5 @@ h1{
 #nuevoItem{
     margin-top: 2%;
     margin-bottom: 5%;
+    display: none;
 }

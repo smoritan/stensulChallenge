@@ -1,7 +1,7 @@
 items = [];
 
 function obtenerUltimoId() {
-    var maxId = null;
+    var maxId = 0;
     for(var i=0;i<items.length;++i){
       if(items[i].id > maxId)
         maxId = items[i].id;
@@ -12,6 +12,7 @@ function obtenerUltimoId() {
 function editar(){
     document.getElementById('items').contentEditable ='true';
     document.getElementById('items').designMode='on';
+    this.guardar();
 };
 
 function crear() {
@@ -22,10 +23,27 @@ function crear() {
     clon.setAttribute("id", obtenerUltimoId());
     console.log(items)
     document.getElementById("list").appendChild(clon);
+    this.guardar();
   };
 
 function eliminar(id){
-    var node = document.getElementById(obtenerUltimoId());
+    var node = document.getElementById(obtenerUltimoId(id));
     node.parentNode.removeChild(node);
-    items.pop(node);
+    
+};
+
+if (typeof(Storage) !== "undefined") {
+    // LocalStorage disponible
+} else {
+    // LocalStorage no soportado en este navegador
+}
+
+function guardar(){
+                
+    var objeto = items;
+    
+    objeto = JSON.stringify(objeto);
+
+    localStorage.setItem('miObjeto',objeto);
+ 
 };
