@@ -1,5 +1,5 @@
 body{
-    background-color: #e9e5dd;
+    background-image: url("memphis-mini.png");
     font-family: 'Montserrat', sans-serif;
 }
 h1{
@@ -24,11 +24,22 @@ h1{
     text-align: center;
     list-style: none;
     font-size: 1.5em;
-    background-color: #fff7f7;
+    background-color: #fff;
     color: #445c3c;
     margin-bottom: 3%;
     padding: 4%;
 }
+/* #status{
+    width: 5%;
+    float: right;
+    background-color: #EEE;
+    color: #445c3c;
+	border-radius: 16px;
+    margin-right: 6%;
+    margin-bottom: 2%;
+	padding: 8px 18px 8px 2px;
+	font-size: 0.8em;
+} */
 .crear{
     border: 0;
 	outline: 0;
@@ -61,8 +72,21 @@ h1{
 	padding: 8px 18px 8px 18px;
 	font-size: 0.8em;
 }
+
+.cargarImg{
+    border: 0;
+	outline: 0;
+    background-color: #EEE;
+    color: #445c3c;
+	border-radius: 16px;
+	margin-left: 3%;
+	padding: 8px 18px 8px 18px;
+	font-size: 0.8em;
+}
+
 #nuevoItem{
     margin-top: 2%;
     margin-bottom: 5%;
     display: none;
 }
+
