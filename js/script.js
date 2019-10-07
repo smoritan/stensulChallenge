@@ -9,11 +9,11 @@ function renderItem(item) {
     textContainer.textContent = item.content;
 
     const editButton = document.createElement('button');
-    editButton.textContent = 'E';
+    editButton.textContent = 'Edit';
     editButton.addEventListener('click', editItem);
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'D';
+    deleteButton.textContent = 'Delete';
     deleteButton.addEventListener('click', deleteItem);
 
     const itemElement = document.createElement('li');
