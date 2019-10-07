@@ -68,6 +68,9 @@ function deleteItem(event) {
     }
 }
 
+$(document).ready(function(){
+    $( "#list" ).sortable({});
+});
 
 function saveItems() {
     window.localStorage.setItem('items', JSON.stringify(items));
